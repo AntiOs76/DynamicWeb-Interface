@@ -1,0 +1,30 @@
+<svg width="64" height="64" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rf-bg-favicon" x1="14" y1="10" x2="79" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB45C"/>
+      <stop offset="0.52" stop-color="#E56B2C"/>
+      <stop offset="1" stop-color="#8F3516"/>
+    </linearGradient>
+    <linearGradient id="rf-card-favicon" x1="31" y1="26" x2="61" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8ED"/>
+      <stop offset="1" stop-color="#FFE6CA"/>
+    </linearGradient>
+    <linearGradient id="rf-flow-favicon" x1="49" y1="30" x2="68" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF3D5"/>
+      <stop offset="1" stop-color="#FFD39E"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="6" y="6" width="84" height="84" rx="28" fill="url(#rf-bg-favicon)"/>
+  <rect x="23" y="27" width="31" height="41" rx="8" transform="rotate(-10 23 27)" fill="#F2B26B" fill-opacity="0.45"/>
+  <rect x="30" y="22" width="34" height="46" rx="9" fill="url(#rf-card-favicon)"/>
+  <rect x="36" y="31" width="14" height="4.5" rx="2.25" fill="#D96A2D"/>
+  <rect x="36" y="40" width="22" height="3.5" rx="1.75" fill="#E9B27A"/>
+  <rect x="36" y="47" width="17" height="3.5" rx="1.75" fill="#E9B27A"/>
+  <rect x="36" y="54" width="20" height="3.5" rx="1.75" fill="#E9B27A"/>
+  <path d="M62.5714 23.4287C71.4863 23.4287 78.7142 30.6567 78.7142 39.5716C78.7142 48.4865 71.4863 55.7144 62.5714 55.7144H57.4285" stroke="url(#rf-flow-favicon)" stroke-width="6.5" stroke-linecap="round"/>
+  <path d="M62.5 61.5L54.5 55.5L62.5 49.5" stroke="url(#rf-flow-favicon)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="68.5" cy="29.5" r="3.5" fill="#FFF2D4"/>
+  <path d="M20 19L22.3 23.7L27 26L22.3 28.3L20 33L17.7 28.3L13 26L17.7 23.7L20 19Z" fill="#FFF2D4"/>
+</svg>
+
