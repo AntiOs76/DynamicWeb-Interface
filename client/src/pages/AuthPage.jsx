@@ -61,7 +61,7 @@ export function AuthPage() {
 
   return (
     <div className="auth-layout">
-      <section className="auth-hero panel hero-panel">
+      <section className="auth-hero hero-panel">
         <div className="hero-brand">
           <img className="hero-logo" src={recallFlowLogo} alt="RecallFlow logo" />
           <div>
@@ -74,77 +74,89 @@ export function AuthPage() {
         </p>
       </section>
 
-      <section className="auth-panel panel glass-panel">
-        <div className="tabs">
-          <button
-            className={mode === "login" ? "tab active" : "tab"}
-            type="button"
-            onClick={() => setMode("login")}
-          >
-            Sign In
-          </button>
-          <button
-            className={mode === "register" ? "tab active" : "tab"}
-            type="button"
-            onClick={() => setMode("register")}
-          >
-            Create Account
-          </button>
+      <section className="auth-panel auth-panel-surface">
+        <div className="auth-heading">
+          <p className="eyebrow">{mode === "login" ? "Welcome back" : "Get started"}</p>
+          <h2 className="auth-title">
+            {mode === "login" ? "Sign in to your account" : "Create your account"}
+          </h2>
         </div>
 
-        {errorMessage ? <StatusBanner tone="error">{errorMessage}</StatusBanner> : null}
-
-        {mode === "login" ? (
-          <form
-            key="login-form"
-            className="form-grid auth-form"
-            onSubmit={loginForm.handleSubmit(handleLogin)}
-          >
-            <label className="field">
-              <span>Email</span>
-              <input type="email" placeholder="student@example.com" {...loginForm.register("email")} />
-              <small>{loginForm.formState.errors.email?.message}</small>
-            </label>
-
-            <label className="field">
-              <span>Password</span>
-              <input type="password" placeholder="At least 8 characters" {...loginForm.register("password")} />
-              <small>{loginForm.formState.errors.password?.message}</small>
-            </label>
-
-            <button className="primary-button full-width" type="submit">
-              {isAuthenticating ? "Signing in..." : "Sign In"}
+        <div className="auth-card">
+          <div className="tabs">
+            <button
+              className={mode === "login" ? "tab active" : "tab"}
+              type="button"
+              onClick={() => setMode("login")}
+            >
+              Sign In
             </button>
-          </form>
-        ) : (
-          <form
-            key="register-form"
-            className="form-grid auth-form"
-            onSubmit={registerForm.handleSubmit(handleRegister)}
-          >
-            <label className="field">
-              <span>Username</span>
-              <input placeholder="Your study alias" {...registerForm.register("username")} />
-              <small>{registerForm.formState.errors.username?.message}</small>
-            </label>
-
-            <label className="field">
-              <span>Email</span>
-              <input type="email" placeholder="student@example.com" {...registerForm.register("email")} />
-              <small>{registerForm.formState.errors.email?.message}</small>
-            </label>
-
-            <label className="field">
-              <span>Password</span>
-              <input type="password" placeholder="Create a secure password" {...registerForm.register("password")} />
-              <small>{registerForm.formState.errors.password?.message}</small>
-            </label>
-
-            <button className="primary-button full-width" type="submit">
-              {isAuthenticating ? "Creating account..." : "Create Account"}
+            <button
+              className={mode === "register" ? "tab active" : "tab"}
+              type="button"
+              onClick={() => setMode("register")}
+            >
+              Create Account
             </button>
-          </form>
-        )}
+            <span className={`tab-indicator${mode === "register" ? " tab-indicator-right" : ""}`} />
+          </div>
+
+          <hr className="auth-divider" />
+
+          {errorMessage ? <StatusBanner tone="error">{errorMessage}</StatusBanner> : null}
+
+          {mode === "login" ? (
+            <form
+              key="login-form"
+              className="form-grid auth-form"
+              onSubmit={loginForm.handleSubmit(handleLogin)}
+            >
+              <label className="field">
+                <span>Email</span>
+                <input type="email" placeholder="student@example.com" {...loginForm.register("email")} />
+                <small>{loginForm.formState.errors.email?.message}</small>
+              </label>
+
+              <label className="field">
+                <span>Password</span>
+                <input type="password" placeholder="At least 8 characters" {...loginForm.register("password")} />
+                <small>{loginForm.formState.errors.password?.message}</small>
+              </label>
+
+              <button className="primary-button full-width" type="submit">
+                {isAuthenticating ? "Signing in..." : "Sign In"}
+              </button>
+            </form>
+          ) : (
+            <form
+              key="register-form"
+              className="form-grid auth-form"
+              onSubmit={registerForm.handleSubmit(handleRegister)}
+            >
+              <label className="field">
+                <span>Username</span>
+                <input placeholder="Your study alias" {...registerForm.register("username")} />
+                <small>{registerForm.formState.errors.username?.message}</small>
+              </label>
+
+              <label className="field">
+                <span>Email</span>
+                <input type="email" placeholder="student@example.com" {...registerForm.register("email")} />
+                <small>{registerForm.formState.errors.email?.message}</small>
+              </label>
+
+              <label className="field">
+                <span>Password</span>
+                <input type="password" placeholder="Create a secure password" {...registerForm.register("password")} />
+                <small>{registerForm.formState.errors.password?.message}</small>
+              </label>
+
+              <button className="primary-button full-width" type="submit">
+                {isAuthenticating ? "Creating account..." : "Create Account"}
+              </button>
+            </form>
+          )}
+        </div>
       </section>
     </div>
   );

@@ -3,7 +3,7 @@ import { env } from "../config/env.js";
 import { User } from "../models/User.js";
 import { AppError } from "../utils/AppError.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
-import { getCookieOptions, signToken } from "../utils/auth.js";
+import { getClearCookieOptions, getCookieOptions, signToken } from "../utils/auth.js";
 
 function sanitizeUser(user) {
   return {
@@ -79,7 +79,7 @@ export const login = asyncHandler(async (req, res) => {
 });
 
 export const logout = asyncHandler(async (_req, res) => {
-  res.clearCookie("token", getCookieOptions(env.nodeEnv));
+  res.clearCookie("token", getClearCookieOptions(env.nodeEnv));
   res.json({ message: "Signed out successfully." });
 });
 
@@ -88,4 +88,3 @@ export const getCurrentUser = asyncHandler(async (req, res) => {
     user: sanitizeUser(req.user)
   });
 });
-

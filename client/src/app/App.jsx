@@ -10,9 +10,9 @@ import { StudyPage } from "../pages/StudyPage.jsx";
 function FullScreenMessage({ title, message }) {
   return (
     <div className="screen-center">
-      <div className="panel glass-panel centered-panel">
+      <div className="panel glass-panel centered-panel loading-panel">
         <p className="eyebrow">RecallFlow</p>
-        <h1>{title}</h1>
+        <h2 className="loading-title">{title}</h2>
         <p className="muted-text">{message}</p>
       </div>
     </div>
@@ -25,8 +25,8 @@ function ProtectedLayout() {
   if (isLoading) {
     return (
       <FullScreenMessage
-        title="Restoring your workspace"
-        message="Syncing decks, due cards, and your latest study progress."
+        title="Opening workspace"
+        message="Syncing your latest decks and review progress."
       />
     );
   }
@@ -48,8 +48,8 @@ export function App() {
   if (isLoading && !user) {
     return (
       <FullScreenMessage
-        title="Preparing RecallFlow"
-        message="Loading your session and getting the learning dashboard ready."
+        title="Loading"
+        message="Checking your session and preparing the app."
       />
     );
   }
@@ -69,4 +69,3 @@ export function App() {
     </Routes>
   );
 }
-

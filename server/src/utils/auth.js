@@ -17,3 +17,10 @@ export function getCookieOptions(nodeEnv) {
   };
 }
 
+export function getClearCookieOptions(nodeEnv) {
+  return {
+    httpOnly: true,
+    sameSite: "lax",
+    secure: nodeEnv === "production"
+  };
+}
