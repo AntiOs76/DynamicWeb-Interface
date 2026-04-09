@@ -10,6 +10,40 @@ import { SkeletonCard } from "../components/SkeletonCard.jsx";
 import { StatusBanner } from "../components/StatusBanner.jsx";
 import { formatDate, formatRelativeDue } from "../utils/format.js";
 
+function icon(children) {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      {children}
+    </svg>
+  );
+}
+
+function SearchIcon() {
+  return icon(
+    <>
+      <circle cx="11" cy="11" r="6.5" />
+      <path d="m16 16 4.5 4.5" />
+    </>
+  );
+}
+
+function PlusIcon() {
+  return icon(
+    <>
+      <path d="M12 5v14" />
+      <path d="M5 12h14" />
+    </>
+  );
+}
+
 export function DeckWorkspacePage() {
   const { deckId } = useParams();
   const navigate = useNavigate();
@@ -135,6 +169,9 @@ export function DeckWorkspacePage() {
             <h2>{deck?.title || "Deck Workspace"}</h2>
             <label className="search-field workspace-search-field">
               <span className="visually-hidden">Search cards in this deck</span>
+              <span className="workspace-search-icon">
+                <SearchIcon />
+              </span>
               <input
                 type="search"
                 value={searchTerm}
@@ -152,7 +189,8 @@ export function DeckWorkspacePage() {
             Edit Deck
           </button>
           <button className="secondary-button" type="button" onClick={() => setCreatingCard(true)} disabled={!deck}>
-            Add Card
+            <PlusIcon />
+            Add card
           </button>
           <button className="primary-button" type="button" onClick={() => navigate(`/study/${deckId}`)} disabled={!deck}>
             Start Study Session
@@ -239,7 +277,8 @@ export function DeckWorkspacePage() {
               message="Add a few cards so the deck can power a real review session."
               action={
                 <button className="primary-button" type="button" onClick={() => setCreatingCard(true)}>
-                  Create Flashcard
+                  <PlusIcon />
+                  Add card
                 </button>
               }
             />
