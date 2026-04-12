@@ -97,22 +97,26 @@ export function StudyPage() {
 
           <StudyCard card={currentCard} revealed={revealed} onReveal={() => setRevealed(true)} />
 
-          <p className="muted-text study-rating-prompt">
-            How well did you remember this card?
-          </p>
-          <div className="rating-row">
-            {reviewOrder.map((rating) => (
-              <button
-                key={rating}
-                className="secondary-button"
-                type="button"
-                disabled={!revealed || reviewMutation.isPending}
-                onClick={() => handleRate(rating)}
-              >
-                {reviewMutation.isPending ? "Saving..." : reviewLabels[rating]}
-              </button>
-            ))}
-          </div>
+          {revealed ? (
+            <>
+              <p className="muted-text study-rating-prompt">
+                How well did you remember this card?
+              </p>
+              <div className="rating-row">
+                {reviewOrder.map((rating) => (
+                  <button
+                    key={rating}
+                    className="secondary-button"
+                    type="button"
+                    disabled={reviewMutation.isPending}
+                    onClick={() => handleRate(rating)}
+                  >
+                    {reviewMutation.isPending ? "Saving..." : reviewLabels[rating]}
+                  </button>
+                ))}
+              </div>
+            </>
+          ) : null}
         </section>
       )}
     </>
