@@ -44,6 +44,57 @@ function PlusIcon() {
   );
 }
 
+function CalendarIcon() {
+  return icon(
+    <>
+      <rect x="3.5" y="5" width="17" height="15" rx="2.5" />
+      <path d="M8 3.5v4" />
+      <path d="M16 3.5v4" />
+      <path d="M3.5 9.5h17" />
+    </>
+  );
+}
+
+function ReviewsIcon() {
+  return icon(
+    <>
+      <path d="M20 11.5A8 8 0 1 1 17.7 5.8" />
+      <path d="M20.5 4.5v5h-5" />
+    </>
+  );
+}
+
+function HintIcon() {
+  return icon(
+    <>
+      <path d="M9.5 17.5h5" />
+      <path d="M10 20.5h4" />
+      <path d="M8 13.5c-1.1-.9-1.8-2.3-1.8-3.8A5.8 5.8 0 0 1 12 4a5.8 5.8 0 0 1 5.8 5.7c0 1.5-.7 2.9-1.8 3.8-.7.6-1.2 1.3-1.4 2h-5.2c-.2-.7-.7-1.4-1.4-2Z" />
+    </>
+  );
+}
+
+function EditIcon() {
+  return icon(
+    <>
+      <path d="M4.5 19.5h4l9.4-9.4a2.1 2.1 0 1 0-3-3L5.5 16.5z" />
+      <path d="m13.5 6.5 4 4" />
+    </>
+  );
+}
+
+function TrashIcon() {
+  return icon(
+    <>
+      <path d="M4.5 7.5h15" />
+      <path d="M9 4.5h6" />
+      <path d="M7 7.5v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-10" />
+      <path d="M10 11v5" />
+      <path d="M14 11v5" />
+    </>
+  );
+}
+
 export function DeckWorkspacePage() {
   const { deckId } = useParams();
   const navigate = useNavigate();
@@ -228,32 +279,46 @@ export function DeckWorkspacePage() {
             <section className="card-list">
               {filteredCards.map((card) => (
                 <article key={card._id} className="panel card-item">
-                  <div className="card-item-header">
-                    <div>
+                  <div className="card-item-body">
+                    <div className="card-item-heading">
+                      <p className="eyebrow">Flashcard</p>
                       <h3>{card.question}</h3>
+                      <span className="pill card-due-pill">{formatRelativeDue(card.nextReviewAt)}</span>
                     </div>
-                    <span className="pill">{formatRelativeDue(card.nextReviewAt)}</span>
-                  </div>
-                  <p>{card.answer}</p>
-                  {card.hint ? <p className="muted-text">Hint: {card.hint}</p> : null}
-                  {card.tags?.length ? (
-                    <div className="tag-row">
-                      {card.tags.map((tag) => (
-                        <span key={tag} className="tag-chip">
-                          {tag}
-                        </span>
-                      ))}
+                    <p className="card-answer">{card.answer}</p>
+                    {card.hint ? (
+                      <p className="muted-text card-hint">
+                        <HintIcon />
+                        <span>{card.hint}</span>
+                      </p>
+                    ) : null}
+                    {card.tags?.length ? (
+                      <div className="tag-row card-tag-row">
+                        {card.tags.map((tag) => (
+                          <span key={tag} className="tag-chip">
+                            #{tag}
+                          </span>
+                        ))}
+                      </div>
+                    ) : null}
+                    <div className="card-item-footer">
+                      <span className="card-meta">
+                        <CalendarIcon />
+                        Last reviewed {formatDate(card.lastReviewedAt)}
+                      </span>
+                      <span className="card-meta">
+                        <ReviewsIcon />
+                        {card.reviewCount} {card.reviewCount === 1 ? "review" : "reviews"}
+                      </span>
                     </div>
-                  ) : null}
-                  <div className="card-item-footer">
-                    <span>Last reviewed: {formatDate(card.lastReviewedAt)}</span>
-                    <span>Reviews: {card.reviewCount}</span>
                   </div>
-                  <div className="card-actions">
+                  <div className="card-actions card-item-actions">
                     <button className="ghost-button" type="button" onClick={() => setEditingCard(card)}>
+                      <EditIcon />
                       Edit
                     </button>
                     <button className="ghost-button danger-button" type="button" onClick={() => setCardToDelete(card)}>
+                      <TrashIcon />
                       Delete
                     </button>
                   </div>
