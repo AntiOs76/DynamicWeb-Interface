@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "69d2251b875eda6b377d2bb6"
+  },
+  "username": "bullshit",
+  "email": "antios314@gmail.com",
+  "passwordHash": "$2a$10$ZTLyl7yMhNTI4FraKphikuJj9.8tobe3xSUUqBShC5op2..nP5TkO",
+  "createdAt": {
+    "$date": "2026-04-05T09:02:19.656Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d3bde59cf844cb51b59410"
+  },
+  "username": "asdf",
+  "email": "asdf@asdfasdf.com",
+  "passwordHash": "$2a$10$ZmH4aNIkdxgnN2/DsAfCjuShJMuXH8uX2aJZtR9oueBj3uc1fyQeq",
+  "createdAt": {
+    "$date": "2026-04-06T14:06:29.614Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d44a259cf844cb51b5943e"
+  },
+  "username": "asdf",
+  "email": "asdf@asdf.com",
+  "passwordHash": "$2a$10$2MkhTpsgLo4WTlsgMJPNwuOlsbQlQrtMaKSAKGcEuSjKDzzbucyIi",
+  "createdAt": {
+    "$date": "2026-04-07T00:04:53.674Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69db75d30c5264aa9dddd718"
+  },
+  "username": "Kecheng Yan",
+  "email": "kecheng.yan@student.uts.edu.au",
+  "passwordHash": "$2a$10$ZPMMwYpG4CanSkXrbvolneypVM.hREd3ArLM8T44B93xjNZSCRupe",
+  "createdAt": {
+    "$date": "2026-04-12T10:37:07.980Z"
+  },
+  "__v": 0
+}]

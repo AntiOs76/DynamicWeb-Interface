@@ -2,9 +2,13 @@
 
 RecallFlow is a single-page flashcard learning app built for the Dynamic Web Interface to a Database System assignment. It helps students create decks, manage flashcards, and run focused study sessions where each card flips to reveal the answer and disappears from the session after it is scored.
 
+## About Database Files
+
+This project is using MongoDB Atlas, which is a DBaaS, I downloaded the collections in `database_JSON/`
+
 ## Problem It Solves
 
-Traditional flashcard tools often split creation, review, and progress tracking across clunky screens. RecallFlow keeps the full learning workflow in one polished SPA so users can create decks, edit cards, review due content, and see progress without disruptive page reloads.
+RecallFlow keeps the full learning workflow in one polished SPA so users can create decks, edit cards, review due content, and see progress without disruptive page reloads.
 
 ## Technical Stack
 
@@ -97,8 +101,12 @@ Traditional flashcard tools often split creation, review, and progress tracking 
 
 5. Open [http://localhost:5173](http://localhost:5173). The API runs on [http://localhost:5050](http://localhost:5050).
 
-## Screenshot Placeholder
+## Screenshots
 
-- Add dashboard screenshot here
-- Add deck workspace screenshot here
-- Add study session screenshot here
+![login](./screenshots/login.png)
+
+![dashboard](./screenshots/dashboard.png)
+
+![deck_workspace](./screenshots/deck_workspace.png)
+
+![study_session](./screenshots/study_session.png)

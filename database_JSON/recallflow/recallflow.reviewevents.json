@@ -1,0 +1,240 @@
+[{
+  "_id": {
+    "$oid": "69d225e1875eda6b377d2bf6"
+  },
+  "userId": {
+    "$oid": "69d2251b875eda6b377d2bb6"
+  },
+  "cardId": {
+    "$oid": "69d22594875eda6b377d2bdc"
+  },
+  "rating": "again",
+  "reviewedAt": {
+    "$date": "2026-04-05T09:05:37.387Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d225e9875eda6b377d2bfd"
+  },
+  "userId": {
+    "$oid": "69d2251b875eda6b377d2bb6"
+  },
+  "cardId": {
+    "$oid": "69d225ac875eda6b377d2be3"
+  },
+  "rating": "hard",
+  "reviewedAt": {
+    "$date": "2026-04-05T09:05:44.985Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d225ef875eda6b377d2c04"
+  },
+  "userId": {
+    "$oid": "69d2251b875eda6b377d2bb6"
+  },
+  "cardId": {
+    "$oid": "69d225cd875eda6b377d2bea"
+  },
+  "rating": "again",
+  "reviewedAt": {
+    "$date": "2026-04-05T09:05:51.619Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d246a6875eda6b377d2c6a"
+  },
+  "userId": {
+    "$oid": "69d2251b875eda6b377d2bb6"
+  },
+  "cardId": {
+    "$oid": "69d225cd875eda6b377d2bea"
+  },
+  "rating": "again",
+  "reviewedAt": {
+    "$date": "2026-04-05T11:25:26.141Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d246a8875eda6b377d2c71"
+  },
+  "userId": {
+    "$oid": "69d2251b875eda6b377d2bb6"
+  },
+  "cardId": {
+    "$oid": "69d225ac875eda6b377d2be3"
+  },
+  "rating": "again",
+  "reviewedAt": {
+    "$date": "2026-04-05T11:25:28.237Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d246a9875eda6b377d2c78"
+  },
+  "userId": {
+    "$oid": "69d2251b875eda6b377d2bb6"
+  },
+  "cardId": {
+    "$oid": "69d22594875eda6b377d2bdc"
+  },
+  "rating": "again",
+  "reviewedAt": {
+    "$date": "2026-04-05T11:25:29.266Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d761c479638f407df7d563"
+  },
+  "userId": {
+    "$oid": "69d44a259cf844cb51b5943e"
+  },
+  "cardId": {
+    "$oid": "69d761b179638f407df7d557"
+  },
+  "rating": "again",
+  "reviewedAt": {
+    "$date": "2026-04-09T08:22:28.111Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d7b4947be526ed0e26447e"
+  },
+  "userId": {
+    "$oid": "69d44a259cf844cb51b5943e"
+  },
+  "cardId": {
+    "$oid": "69d7b4647be526ed0e264472"
+  },
+  "rating": "hard",
+  "reviewedAt": {
+    "$date": "2026-04-09T14:15:48.038Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69db5d817be526ed0e2644ed"
+  },
+  "userId": {
+    "$oid": "69d44a259cf844cb51b5943e"
+  },
+  "cardId": {
+    "$oid": "69d7b4647be526ed0e264472"
+  },
+  "rating": "hard",
+  "reviewedAt": {
+    "$date": "2026-04-12T08:53:21.258Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69db77880c5264aa9dddd74e"
+  },
+  "userId": {
+    "$oid": "69db75d30c5264aa9dddd718"
+  },
+  "cardId": {
+    "$oid": "69db76a90c5264aa9dddd734"
+  },
+  "rating": "easy",
+  "reviewedAt": {
+    "$date": "2026-04-12T10:44:24.945Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69db77900c5264aa9dddd755"
+  },
+  "userId": {
+    "$oid": "69db75d30c5264aa9dddd718"
+  },
+  "cardId": {
+    "$oid": "69db76d20c5264aa9dddd73b"
+  },
+  "rating": "easy",
+  "reviewedAt": {
+    "$date": "2026-04-12T10:44:32.644Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69db77930c5264aa9dddd75c"
+  },
+  "userId": {
+    "$oid": "69db75d30c5264aa9dddd718"
+  },
+  "cardId": {
+    "$oid": "69db76ed0c5264aa9dddd742"
+  },
+  "rating": "easy",
+  "reviewedAt": {
+    "$date": "2026-04-12T10:44:35.182Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69db793d0c5264aa9dddd76e"
+  },
+  "userId": {
+    "$oid": "69db75d30c5264aa9dddd718"
+  },
+  "cardId": {
+    "$oid": "69db76ed0c5264aa9dddd742"
+  },
+  "rating": "again",
+  "reviewedAt": {
+    "$date": "2026-04-12T10:51:41.028Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69db79470c5264aa9dddd775"
+  },
+  "userId": {
+    "$oid": "69db75d30c5264aa9dddd718"
+  },
+  "cardId": {
+    "$oid": "69db76d20c5264aa9dddd73b"
+  },
+  "rating": "again",
+  "reviewedAt": {
+    "$date": "2026-04-12T10:51:51.246Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69db79490c5264aa9dddd77c"
+  },
+  "userId": {
+    "$oid": "69db75d30c5264aa9dddd718"
+  },
+  "cardId": {
+    "$oid": "69db76a90c5264aa9dddd734"
+  },
+  "rating": "hard",
+  "reviewedAt": {
+    "$date": "2026-04-12T10:51:53.426Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "69d2672269dd58646e688bef"
+  },
+  "deckId": {
+    "$oid": "69d2670c69dd58646e688be1"
+  },
+  "question": "得到的是多少",
+  "answer": "得到",
+  "hint": "得到",
+  "tags": [
+    "得到"
+  ],
+  "lastReviewedAt": null,
+  "streak": 0,
+  "ease": 2.3,
+  "reviewCount": 0,
+  "nextReviewAt": {
+    "$date": "2026-04-05T13:44:02.912Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-05T13:44:02.912Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-05T13:44:02.912Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69db76a90c5264aa9dddd734"
+  },
+  "deckId": {
+    "$oid": "69db75f20c5264aa9dddd722"
+  },
+  "question": "Which cell organelle is primarily responsible for ATP production through cellular respiration?",
+  "answer": "Mitochondria",
+  "hint": "It is often referred to as the 'powerhouse' of the cell.",
+  "tags": [],
+  "lastReviewedAt": {
+    "$date": "2026-04-12T10:51:53.426Z"
+  },
+  "streak": 2,
+  "ease": 2.4,
+  "reviewCount": 2,
+  "nextReviewAt": {
+    "$date": "2026-04-18T10:51:53.426Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-12T10:40:41.626Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-12T10:51:53.427Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69db76d20c5264aa9dddd73b"
+  },
+  "deckId": {
+    "$oid": "69db75f20c5264aa9dddd722"
+  },
+  "question": "In a DNA molecule, which nitrogenous base always pairs with Cytosine?",
+  "answer": "Guanine",
+  "hint": "Think of the mnemonic 'G-C' or 'Cars in the Garage'.",
+  "tags": [],
+  "lastReviewedAt": {
+    "$date": "2026-04-12T10:51:51.246Z"
+  },
+  "streak": 0,
+  "ease": 2.25,
+  "reviewCount": 2,
+  "nextReviewAt": {
+    "$date": "2026-04-13T10:51:51.246Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-12T10:41:22.678Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-12T10:51:51.246Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69db76ed0c5264aa9dddd742"
+  },
+  "deckId": {
+    "$oid": "69db75f20c5264aa9dddd722"
+  },
+  "question": "What are the basic building blocks (monomers) of proteins?",
+  "answer": "Amino acids",
+  "hint": "They contain both an amino group and a carboxyl group.",
+  "tags": [],
+  "lastReviewedAt": {
+    "$date": "2026-04-12T10:51:41.028Z"
+  },
+  "streak": 0,
+  "ease": 2.25,
+  "reviewCount": 2,
+  "nextReviewAt": {
+    "$date": "2026-04-13T10:51:41.028Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-12T10:41:49.959Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-12T10:51:41.029Z"
+  },
+  "__v": 0
+}]
