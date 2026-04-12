@@ -91,7 +91,7 @@ RecallFlow keeps the full learning workflow in one polished SPA so users can cre
    cp client/.env.example client/.env
    ```
 
-3. Update `server/.env` with your MongoDB Atlas connection string and a custom `JWT_SECRET`.
+3. Update `server/.env` with your MongoDB Atlas connection string and a custom `JWT_SECRET`. For local development, `client/.env` can keep the default `VITE_API_URL=http://localhost:5050` unless you change the API port.
 
 4. Start the full app:
 
